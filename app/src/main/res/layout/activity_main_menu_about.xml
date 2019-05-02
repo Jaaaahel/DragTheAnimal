@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jjj.a1day.MainMenu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_main"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/txtAbout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        android:text="This app was made for our project in Mobile Development."
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_below="@id/txtAbout1"
+        android:text="The group members are:."
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:layout_below="@id/txtAbout1"
+        android:text="Aguilar, Arthur A.\nCollado, Rowel\nDunca, Gerald Kiel S.\nGeraldino, Arra Jean P.\nManaog, Andrea Mae\nManalastas, Zeaven M.\nPelagio, Arjay\nPortuguez, Stephan\nRelova, Jose Juan Jeremiah L."
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:background="@null"
+        android:src="@drawable/button_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:text="BACK" />
+
+</RelativeLayout>

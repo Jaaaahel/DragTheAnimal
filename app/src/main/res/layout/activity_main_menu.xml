@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jjj.a1day.MainMenu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_main"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="Drag The Animal"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:background="@drawable/button_square"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:background="@drawable/button_square"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnStart"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="ABOUT" />
+
+</RelativeLayout>

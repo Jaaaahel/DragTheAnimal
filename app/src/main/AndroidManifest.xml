@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jjj.a1day">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DragTheAnimal"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GameFarm1" />
+        <activity android:name=".GameFarm2" />
+        <activity android:name=".GameFarm3" />
+        <activity android:name=".GameFarm4" />
+        <activity android:name=".GameFarm5" />
+        <activity android:name=".GameFarm6" />
+        <activity android:name=".GameJungle1" />
+        <activity android:name=".GameSea1" />
+        <activity android:name=".GameJungle2" />
+        <activity android:name=".GameJungle3" />
+        <activity android:name=".GameJungle4" />
+        <activity android:name=".GameJungle5" />
+        <activity android:name=".GameJungle6" />
+        <activity android:name=".GameSea2" />
+        <activity android:name=".GameSea3" />
+        <activity android:name=".GameSea4" />
+        <activity android:name=".GameSea5" />
+        <activity android:name=".GameSea6" />
+        <activity android:name=".MainMenu_About"></activity>
+    </application>
+
+</manifest>

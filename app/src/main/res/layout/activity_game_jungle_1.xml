@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jjj.a1day.GameFarm1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_jungle"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/gamesCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Jungle Animals"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:background="@null"
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="195dp"
+            android:text="BACK" />
+
+        <ImageView
+            android:id="@+id/games_deer_shadow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gamesCategory"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="175dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/j_shadow_deer"
+            android:tag="Deer"/>
+
+        <ImageView
+            android:id="@+id/games_lion_item"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/games_deer_shadow"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jungle_lion"
+            android:tag="Lion" />
+
+        <ImageView
+            android:id="@+id/games_tiger_item"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/games_deer_shadow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jungle_tiger"
+            android:tag="Tiger" />
+
+        <ImageView
+            android:id="@+id/games_deer_item"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/games_deer_shadow"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jungle_deer"
+            android:tag="Deer" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:background="@null"
+            android:src="@drawable/button_next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="NEXT" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:background="@null"
+            android:src="@drawable/button_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="fitXY"
+            android:text="BACK" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:background="@null"
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="BACK" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentBottom="true"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_toLeftOf="@id/star"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

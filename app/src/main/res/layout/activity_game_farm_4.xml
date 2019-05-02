@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jjj.a1day.GameFarm2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_farm"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:background="@null"
+        android:src="@drawable/button_next"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="NEXT" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:background="@null"
+        android:src="@drawable/button_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY"
+        android:text="BACK" />
+
+    <TextView
+        android:id="@+id/gamesCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Farm Animals"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:background="@null"
+        android:src="@drawable/star"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="BACK" />
+
+    <ImageView
+        android:id="@+id/games_hen_shadow"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gamesCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/hen_shadow"
+        android:tag="Hen" />
+
+    <ImageView
+        android:id="@+id/games_rooster_item"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/games_hen_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/rooster"
+        android:tag="Rooster" />
+
+    <ImageView
+        android:id="@+id/games_pig_item"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/games_hen_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/pig"
+        android:tag="Pig" />
+
+    <ImageView
+        android:id="@+id/games_hen_item"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/games_hen_shadow"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/hen"
+        android:tag="Hen" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:background="@null"
+        android:src="@drawable/star"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="BACK" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentBottom="true"
+        android:textSize="45sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/star"/>
+
+</RelativeLayout>
